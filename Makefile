@@ -1,6 +1,6 @@
 default: init
 
-.PHONY: init run-integration-tests remove-media-cache-tests
+.PHONY: init run-integration-tests remove-media-cache-tests tests clean
 
 init: setup install-database
 
@@ -15,3 +15,11 @@ install-database:
 	docker compose exec php-fpm php bin/console app:generate-random-post
 	docker compose exec php-fpm php bin/console app:generate-random-post
 	docker compose exec php-fpm php bin/console app:generate-summary-post
+
+
+tests:
+	SYMFONY_DEPRECATIONS_HELPER=weak docker compose exec php-fpm  vendor/bin/codecept run --steps
+
+clean:
+	docker compose exec php-fpm vendor/bin/codecept clean
+	docker compose down -v

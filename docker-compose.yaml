@@ -16,6 +16,9 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - ./:/var/www/html
+    environment:
+      # suppress deprecation warning
+      SYMFONY_DEPRECATIONS_HELPER: weak
     ports:
       - "192:80"
 
