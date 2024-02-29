@@ -19,7 +19,7 @@ extensions:
             router: public/index.php
             directoryIndex: index.php
             startDelay: 1
-            phpIni: /opt/local/etc/php56/php.ini
+            phpIni: /opt/local/etc/php72/php.ini
             suites: [ 'acceptance' ]
 params:
     - .env
