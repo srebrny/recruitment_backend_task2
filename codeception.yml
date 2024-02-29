@@ -9,5 +9,22 @@ actor_suffix: Tester
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
+        - Codeception\Extension\PhpBuiltinServer
+    config:
+        Codeception\Extension\PhpBuiltinServer:
+            hostname: localhost
+            port: 8080
+            autostart: true
+            documentRoot: public
+            router: public/index.php
+            directoryIndex: index.php
+            startDelay: 1
+            phpIni: /opt/local/etc/php56/php.ini
+            suites: [ 'acceptance' ]
 params:
     - .env
+#settings:
+#    bootstrap: _bootstrap.php
+#    colors: true
+#    memory_limit: 1024M
+

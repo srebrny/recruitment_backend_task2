@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ca39bcb2716c9050a11194644d73d88",
+    "content-hash": "c2080da6f09ed49469fec4bb2b9f89c2",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -8356,6 +8356,50 @@
                 "source": "https://github.com/Codeception/module-symfony/tree/2.1.1"
             },
             "time": "2021-12-08T02:43:28+00:00"
+        },
+        {
+            "name": "codeception/phpbuiltinserver",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tiger-seo/PhpBuiltinServer.git",
+                "reference": "730206313b7e85d9ed4838ba02a0aee24fce1239"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tiger-seo/PhpBuiltinServer/zipball/730206313b7e85d9ed4838ba02a0aee24fce1239",
+                "reference": "730206313b7e85d9ed4838ba02a0aee24fce1239",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": ">=2.0.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Codeception": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tiger-seo",
+                    "email": "tiger.seo@gmail.com"
+                }
+            ],
+            "description": "PhpBuiltinServer extension for Codeception",
+            "keywords": [
+                "codeception"
+            ],
+            "support": {
+                "issues": "https://github.com/tiger-seo/PhpBuiltinServer/issues",
+                "source": "https://github.com/tiger-seo/PhpBuiltinServer/tree/master"
+            },
+            "time": "2014-09-19T10:14:07+00:00"
         },
         {
             "name": "codeception/phpunit-wrapper",

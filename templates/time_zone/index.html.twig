@@ -11,10 +11,9 @@
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/src/App/Controller/TimeZoneController.php'|file_link(0) }}">src/App/Controller/TimeZoneController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/templates/time_zone/index.html.twig'|file_link(0) }}">templates/time_zone/index.html.twig</a></code></li>
-    </ul>
+    The time zone [input-timezone] has [A] minutes offset to UTC on the given day at noon.<br />
+    February in this year is [B] days long.<br />
+    The specified month [C] is [D] days long.
+
 </div>
 {% endblock %}
